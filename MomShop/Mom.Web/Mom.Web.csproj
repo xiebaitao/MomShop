@@ -116,6 +116,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\1.txt" />
     <Content Include="Global.asax" />
     <Content Include="Images\banner1.jpg" />
     <Content Include="Images\buy_banner.jpg" />
@@ -312,7 +313,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
