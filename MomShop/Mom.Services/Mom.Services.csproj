@@ -33,11 +33,11 @@
   <ItemGroup>
     <Reference Include="CommunalClass, Version=2019.7.6.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\CommunalClass.dll</HintPath>
+      <HintPath>..\disk\CommunalClass.dll</HintPath>
     </Reference>
     <Reference Include="DataClassWeb, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\DataClassWeb.dll</HintPath>
+      <HintPath>..\disk\DataClassWeb.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
