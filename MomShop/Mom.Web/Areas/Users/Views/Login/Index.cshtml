@@ -1,0 +1,206 @@
+﻿
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>登录 --母婴商城</title>
+    <link href="/Styles/main.css" rel="stylesheet" />
+    <link href="/Scripts/layui/css/layui.css" rel="stylesheet" />
+    <style>
+        /*login*/
+        .login-content .login-bg {
+            width: 100%;
+            background: url(/Images/load_bg.jpg) no-repeat;
+            background-size: cover;
+        }
+
+            .login-content .login-bg .login-cont {
+                height: 475px;
+                position: relative;
+            }
+
+                .login-content .login-bg .login-cont .form-box {
+                    width: 300px;
+                    height: 430px;
+                    border: 1px solid #d9dadc;
+                    background: #fff;
+                    position: absolute;
+                    top: 20px;
+                    right: 70px;
+                    padding: 0 30px;
+                }
+
+                    .login-content .login-bg .login-cont .form-box legend {
+                        padding: 20px 0;
+                    }
+
+                .login-content .login-bg .login-cont .layui-inline, .login-content .login-bg .login-cont .layui-input-inline {
+                    width: 100%;
+                    position: relative;
+                }
+
+                    .login-content .login-bg .login-cont .layui-input-inline .iphone-icon {
+                        position: absolute;
+                        top: 8px;
+                        left: 10px;
+                        color: #d3d3d3;
+                        font-size: 20px;
+                    }
+
+                .login-content .login-bg .login-cont .iphone {
+                    margin-bottom: 20px;
+                }
+
+                    .login-content .login-bg .login-cont .iphone .layui-input {
+                        padding-left: 40px;
+                    }
+
+                .login-content .login-bg .login-cont .veri-code .layui-btn {
+                    width: 102px;
+                    background: #eeeeee;
+                    text-align: center;
+                    color: #333;
+                    height: 36px;
+                    line-height: 36px;
+                    display: inline-block;
+                    border: none;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 1px;
+                    right: 1px;
+                    font-size: 12px;
+                    padding: 0 14px;
+                }
+
+                .login-content .login-bg .login-cont .login-btn .layui-input-block {
+                    margin-left: 0;
+                    padding-top: 25px;
+                }
+
+                    .login-content .login-bg .login-cont .login-btn .layui-input-block button {
+                        width: 100%;
+                        background: #cfb2f6;
+                        font-size: 18px;
+                    }
+
+        .login-pwdbox {
+            width: 100px;
+            height: 60px;
+            text-align: center;
+            color: #95979b;
+            font-size: 18px;
+            line-height: 60px;
+        }
+        /*end-login*/
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="headerLayout w1200">
+            <div class="headerCon">
+                <h1 class="mallLogo">
+                    <a href="#" title="母婴商城">
+                        <img src="/Images/logo.png">
+                    </a>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content content-nav-base  login-content">
+        <div class="login-bg">
+            <div class="login-cont w1200">
+                <div class="form-box">
+                    <div style="width:100%;height:60px;display:flex;justify-content:space-between;border-bottom:#d9dadc 1px solid;">
+                        <div class="login-pwdbox">密码登录</div>
+                        <div class="login-pwdbox">手机登录</div>
+                    </div>
+                    <form class="layui-form" action="">
+                        <legend></legend>
+                        <div class="layui-form-item">
+                            <div class="layui-inline iphone">
+                                <div class="layui-input-inline">
+                                    <i class="layui-icon layui-icon-cellphone iphone-icon"></i>
+                                    <input type="tel" name="phone" id="phone" lay-verify="required|phone" placeholder="请输入账号" autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+                            <div class="layui-inline iphone">
+                                <div class="layui-input-inline">
+                                    <i class="layui-icon layui-icon-cellphone iphone-icon"></i>
+                                    <input type="tel" name="phone" id="phone" lay-verify="required|phone" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+
+                            <div class="layui-inline veri-code">
+                                <div class="layui-input-inline">
+                                    <input id="pnum" type="text" name="pnum" lay-verify="required" placeholder="请输入验证码" autocomplete="off" class="layui-input">
+                                    <input type="button" class="layui-btn" id="find" value="验证码" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item login-btn">
+                            <div class="layui-input-block">
+                                <button class="layui-btn" lay-submit="" lay-filter="demo1" onclick="return false">登录</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <form class="layui-form" action="" style="display:none;">
+                        <legend></legend>
+                        <div class="layui-form-item">
+                            <div class="layui-inline iphone">
+                                <div class="layui-input-inline">
+                                    <i class="layui-icon layui-icon-cellphone iphone-icon"></i>
+                                    <input type="tel" name="phone" id="phone" lay-verify="required|phone" placeholder="请输入手机号" autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+                            <div class="layui-inline veri-code">
+                                <div class="layui-input-inline">
+                                    <input id="pnum" type="text" name="pnum" lay-verify="required" placeholder="请输入验证码" autocomplete="off" class="layui-input">
+                                    <input type="button" class="layui-btn" id="find" value="验证码" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item login-btn">
+                            <div class="layui-input-block">
+                                <button class="layui-btn" lay-submit="" lay-filter="demo1" onclick="return false">登录</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="ng-promise-box">
+            <div class="ng-promise w1200">
+                <p class="text">
+                    <a class="icon1" href="javascript:;">7天无理由退换货</a>
+                    <a class="icon2" href="javascript:;">满99元全场免邮</a>
+                    <a class="icon3" style="margin-right: 0" href="javascript:;">100%品质保证</a>
+                </p>
+            </div>
+        </div>
+        <div class="mod_help w1200">
+            <p>
+                <a href="javascript:;">关于我们</a>
+                <span>|</span>
+                <a href="javascript:;">帮助中心</a>
+                <span>|</span>
+                <a href="javascript:;">售后服务</a>
+                <span>|</span>
+                <a href="javascript:;">母婴资讯</a>
+                <span>|</span>
+                <a href="javascript:;">关于货源</a>
+            </p>
+            <p class="coty">母婴商城版权所有 &copy; 2012-2020</p>
+        </div>
+    </div>
+</body>
+</html>
